@@ -29,20 +29,20 @@ public class MainActivity extends AppCompatActivity {
 
         initAirlinesList();
 
-        TextView textViewSelectedAirline = findViewById(R.id.textViewSelectedAirline);
+        //TextView textViewSelectedAirline = findViewById(R.id.textViewSelectedAirline);
         listViewAirlines = findViewById(R.id.listViewAirlines);
-        AirlineAdapter airlineAdapter = new AirlineAdapter(this, R.layout.airline_item_layout, airlines);
+        AirlineAdapter airlineAdapter = new AirlineAdapter(this, R.layout.airline_shop_item_layout, airlines);
         listViewAirlines.setAdapter(airlineAdapter);
 
-        AdapterView.OnItemClickListener itemSelectedListener = new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Airline airlineSelected = (Airline) parent.getItemAtPosition(position);
-                textViewSelectedAirline.setText(airlineSelected.getTitle());
-            }
-        };
-
-        listViewAirlines.setOnItemClickListener(itemSelectedListener);
+//        AdapterView.OnItemClickListener itemSelectedListener = new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                Airline airlineSelected = (Airline) parent.getItemAtPosition(position);
+//                textViewSelectedAirline.setText(airlineSelected.getTitle());
+//            }
+//        };
+//
+//        listViewAirlines.setOnItemClickListener(itemSelectedListener);
     }
 
     private void initAirlinesList(){

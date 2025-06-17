@@ -7,17 +7,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:paddingTop="50dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textViewSelectedAirline"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+<!--    <TextView-->
+<!--        android:id="@+id/textViewSelectedAirline"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
 
-        android:textSize="30sp"
-        android:text=" "
+<!--        android:textSize="30sp"-->
+<!--        android:text=" "-->
 
-        />
+<!--        />-->
 
     <ListView
         android:id="@+id/listViewAirlines"
